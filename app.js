@@ -17,7 +17,7 @@ mongoose.connection.on('connected', function () {
   console.log('Connection success!');
 });
 
-app.set('views', './views/pages');
+app.set('views', './app/views/pages');
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({
